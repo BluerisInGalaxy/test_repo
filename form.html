@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <section class="registration container">
+
+        <form autocomplete="off" class="registration__form" method="get">
+            <h2 class="registration__title">Registration Form</h2>
+            <div class="form__field">
+                <label class="form__label" for="ism">Ismingiz:</label>
+                <input class="form__input" id="ism" name="ism" minlength="3" maxlength="12" type="text" required>
+            </div>
+
+            <div class="form__field">
+                <label class="form__label" for="surname">Familiyangiz:</label>
+                <input class="form__input" id="surname" name="surname" minlength="3" maxlength="12" type="text"
+                    required>
+            </div>
+
+            <div class="form__field">
+                <label class="form__label" for="email">email:</label>
+                <input class="form__input" id="email" name="email" type="email" required>
+            </div>
+
+            <div class="form__field">
+                <label class="form__label" for="password">Parol:</label>
+                <input class="form__input" id="password" name="ism" minlength="3" maxlength="12" type="password"
+                    required>
+            </div>
+            <div class="form__field">
+                <label class="form__label" for="password_repeat">Parol(Qayta kiriting):</label>
+                <input class="form__input" id="password_repeat" name="ism" minlength="3" maxlength="12" type="password"
+                    required>
+            </div>
+            <div class="form__field">
+                <label class="form__label" for="lang">Tilni tanlang:</label>
+                <select name="lang" id="lang" class="form__select" required>
+                    <option value="uz_UZ">O'zbek</option>
+                    <option value="en_EN">Ingliz</option>
+                    <option value="ru_RU">Rus</option>
+                </select>
+
+            </div>
+            <div class="form__btn">
+                <button class="form__submit" type="submit">Register</button>
+            </div>
+        </form>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <!-- <section class="main container">
+        <div class="main__sidebar">
+            sidebar
+        </div>
+        <div class="main__content">
+            Content
+        </div>
+
+        <div class="main__addSidebar">
+            additional sidebar
+        </div>
+    </section> -->
+    <div class="centered">
+        <form action="index.php" method="get">
+            <label>
+                Ism kiriting:
+                <input name="ism" placeholder="ism kiriting..." type="text">
+            </label>
+            <br>
+            <label>
+                Email:
+                <input name="email" type="email" readonly>
+            </label>
+
+            <label>
+                Tug'ilgan kuningizni kiriting:
+                <input name="birth_date" type="date">
+            </label>
+            <br>
+            <label>
+                Ro'yxatdan o'tgan vaqtingiz:
+                <input name="reg_time" type="datetime-local">
+            </label>
+
+            <br>
+
+            <label>
+                Rasmingizni yuklang:
+                <input name="file" type="file">
+            </label>
+
+            <label>
+                Qidiruv uchun So'rov kiriting:
+                <input list="data" name="search" type="search">
+            </label>
+            <textarea name="uzun_text" cols="30" rows="10"></textarea>
+            <br>
+            <select name="region_id" required>
+                <option disabled selected>--select region -- </option>
+                <option value="12">Toshkent</option>
+                <option value="11">Qashqadaryo</option>
+                <option value="10">Farg'ona</option>
+                <option value="9">Navoiy</option>
+                <option value="8">Samarqand</option>
+            </select>
+
+
+            <datalist id="data">
+                <option>Uzbekistan</option>
+                <option>Azerbaijan</option>
+                <option>Qoraqalpog'iston</option>
+                <option>Turkmaniston</option>
+            </datalist>
+
+            <!-- <input name="age" type="number"> -->
+            <button type="submit">Submit</button>
+            <button type="reset">reset</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
